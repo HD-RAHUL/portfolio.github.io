@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Rahul's Portfolio</title>
+    <link rel="stylesheet" href="styleii.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="favI.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Rahul</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#business-cases">Business Cases</a></div>
+                <div class="contact-btn"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#business-cases">Business Cases</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section id="">
+            <div class="main-container">
+                <div class="image" >
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Rahul</span></h1>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                       I'm passionate and creative web developer with a love for clean and user-friendly design. I specialize in front-end development and have a strong foundation in HTML, CSS, JavaScript, and modern frameworks. My mission is to bring ideas to life through code and make beautiful, responsive websites.
+                    </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔽 ABOUT SECTION START -->
+        <section id="about">
+            <div class="about-container">
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <h2>About Me</h2>
+                    <div class="about-details">
+                      <p><i class="fa-solid fa-user"></i> Name: Rahul Deepak Hebbare</p>
+                      <p><i class="fa-solid fa-envelope"></i> Email: rahulhebbare@gmail.com</p>
+                      <p><i class="fa-solid fa-location-dot"></i> Location: Gadag, Karnataka, India</p>
+                      <p><i class="fa-solid fa-graduation-cap"></i> Education:</p>
+                      <div class="education-details">
+                          <p>  KLE Technological University, Hubli</p>
+                          <p>  Graduation Year: 2026</p>
+                          <p>  CGPA: 8.8</p>
+                      </div>
+                  </div>      
+                </div>
+            </div>
+        </section>
+        <!-- 🔼 ABOUT SECTION END -->
+
+        <!-- 🔽 Skill SECTION START -->
+        <section id="skills">
+            <div class="skills-container">
+              <h2>Skills</h2>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-html5"></i>
+                  <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-css3-alt"></i>
+                  <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-js-square"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-react"></i>
+                  <p>React</p>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-node"></i>
+                  <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-database"></i>
+                  <p>MongoDB</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- 🔼 Skills SECTION END -->
+
+        <!--Projects start-->
+        <section id="projects">
+            <div class="projects-container">
+              <h2>Projects</h2>
+              <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                  <h3>Weather App</h3>
+                  <p>A sleek web app to check live weather conditions worldwide.</p>
+                  <p><strong>Technologies:</strong> HTML, CSS, JS, OpenWeatherMap API</p>
+                  <a href="https://github.com/your-username/weather-app" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                  <h3>To-Do List</h3>
+                  <p>Simple task manager with local storage to track your productivity.</p>
+                  <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                  <a href="https://github.com/your-username/todo-app" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                  <h3>Portfolio Website</h3>
+                  <p>Personal responsive website to showcase my projects and skills.</p>
+                  <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                  <a href="https://github.com/your-username/portfolio-site" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--Projects end-->
+
+        <!--BS start-->
+        <section id="business-cases">
+            <div class="business-container">
+              <h2>Top 5 Google Business Cases</h2>
+              <div class="business-grid">
+                <!-- Case 1 -->
+                <div >
+                  <h3>Search Advertising (AdWords)</h3>
+                  <p>Google's core revenue driver, AdWords revolutionized digital advertising with targeted, auction-based ad placements.</p>
+                </div><br>
+                <!-- Case 2 -->
+                <div >
+                  <h3>Android OS Expansion</h3>
+                  <p>By offering Android free to device manufacturers, Google secured mobile dominance and extended its ecosystem reach.</p>
+                </div><br>
+                <!-- Case 3 -->
+                <div >
+                  <h3>Google Cloud Platform (GCP)</h3>
+                  <p>GCP leverages Google's infrastructure to provide scalable cloud services, enabling enterprise-grade AI and data analytics.</p>
+                </div><br>
+                <!-- Case 4 -->
+                <div >
+                  <h3>Google Maps & Local Business</h3>
+                  <p>Through maps and local listings, Google created value for small businesses while increasing user engagement and ad revenue.</p>
+                </div><br>
+                <!-- Case 5 -->
+                <div >
+                  <h3>Acquisition of YouTube</h3>
+                  <p>Google's $1.65B YouTube acquisition gave it dominance in video content and opened major revenue streams through ads.</p>
+                </div><br>
+              </div>
+            </div>
+      </section>
+      <!--BS end-->
+
+      <!--Contact me start-->
+      <section id="contact">
+        <div class="contact-container">
+          <h2>Contact Me</h2>
+          <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <!--CM end-->
+
+      <section id="business-cases">
+        <div class="business-container">
+          <h2>Portfolio Details</h2>
+          <div class="business-grid">
+            <p><strong>Course Name : </strong>Algorithmic Problem Solving</p><br>
+            <p><strong>Course Code : </strong>444</p><br>
+            <p><strong>Name : </strong>Rahul Deepak Hebbare</p><br>
+            <p><strong>SRN : </strong>01FE22BCS220</p><br>
+            <p><strong>Course Instructor : </strong>Prakash Hegade</p><br>
+            <p><strong>University: </strong>KLE Technological University</p><br>
+            <p><strong>Domain: </strong>Google</p><br>
+          </div>
+        </div>
+      </section>
+
+      
+      
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
