@@ -1,0 +1,170 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+    :root {
+        --primary: rgb(109, 67, 0);
+        --secondary: rgb(170, 110, 30);
+        --dark: #202124;
+        --light: #fff5e6;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+        color: var(--dark);
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    header h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* spacing between image and text */
+    font-size: 2.5rem;
+}
+
+header h1 img {
+    height: 70px;         /* adjust size as needed */
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+    .container {
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+        color: var(--dark);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .intro-box,
+    .diagram-container,
+    .inference,
+    .conclusion {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .diagram-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-left: 6px solid var(--primary);
+    backdrop-filter: blur(6px);
+}
+
+.diagram-container:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+}
+
+.youtube-algorithm-explainer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: var(--primary);
+}
+
+.diagram-container .step, 
+.diagram-container .key-insight {
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 239, 217, 0.7);
+    border-radius: 10px;
+    border-left: 5px solid var(--secondary);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.diagram-container h3 {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.diagram-container ul, 
+.diagram-container ol {
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.diagram-container code {
+    background: #fff1dc;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+
+    .intro-box {
+        border-left: 5px solid var(--primary);
+        display: flex;
+        align-items: center;
+        height: 150px;
+    }
+
+    .flow-diagram {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .flow-step {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-top: 4px solid var(--primary);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    }
+
+    .flow-step:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .flow-step a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .inference {
+        border-left: 5px solid var(--secondary);
+    }
+
+    .inference ul {
+        padding-left: 1.5rem;
+    }
+
+    .conclusion {
+        background-color: transparent;
+        color: var(--dark);
+        border: 2px solid var(--primary);
+    }
+
+    @media (max-width: 768px) {
+        .flow-diagram {
+            grid-template-columns: 1fr;
+        }
+    }
