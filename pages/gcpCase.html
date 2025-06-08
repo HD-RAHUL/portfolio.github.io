@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCP Use-Cases</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/case1.css" />
+    <link rel="stylesheet" href="../styleSheets/index.css" />
+    <link rel="stylesheet" href="../styleSheets/gcpCase.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="../assets/cv.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1><img src="../assets/cloud.png" alt="Cloud Logo" />Google Cloud Platform</h1>
+      </div>
+    </header>
+
+    <div class="intro-container">
+      <h2>Introduction</h2>
+      <ul style="margin-left:20px ;">
+        <li>Google Cloud Platform (GCP) is a suite of cloud computing services that enables individuals and enterprises to build, deploy, and scale applications, websites, and services on Google's infrastructure. </li>
+        <li>It offers powerful tools for computing, storage, databases, machine learning, and analytics used by startups to global enterprises.</li>
+        <li>With global data centers and robust security, GCP supports billions of user requests daily, powering everything from web apps to enterprise-grade AI models.</li>
+      </ul>
+    </div>
+
+    <div class="workflow-container">
+      <div class="workflow-step">
+        <div class="step-header">
+          1. Google Cloud Load Balancing 
+        </div>
+        <div class="substep">
+          <div class="explanation-grid">
+            <div class="why-box">
+              <span class="label"><h2>Algorithm</h2></span>
+              <p>
+                <strong>A* Search Algorithm</strong> is a best-first search that finds the shortest path by combining the cost to reach a node (g) and a heuristic estimate to the goal (h). It selects the next node with the lowest total cost f = g + h. The heuristic guides the search efficiently toward the goal, balancing speed and optimality. [1].
+              </p>
+              <div class="image-container">
+                <img id="astar" src="../assets/Astar.gif" alt="A* search Algorithm GIF" />
+                <div class="image-caption">A* Search Algorithm in Action [2]</div>
+              </div>
+              <button class="code-button" onclick="window.location.href='code.html#Astar'"><strong>Code</strong></button>
+            </div>
+            <div class="how-box">
+              <span class="label"><h2>Application</h2></span>
+              <ul style="padding:5px">
+                <li>Google data centers or servers act as nodes, with network links as edges carrying latency/load metrics.</li>
+                <li>A* uses g(n) for actual path cost (like current latency/load) and h(n) as a heuristic (e.g., geographical distance) to estimate remaining cost.</li>
+                <li> Paths are explored based on the lowest total cost f(n) = g(n) + h(n) using a min-heap.</li>
+                <li>A* dynamically updates paths—avoiding overloaded servers (high g(n)) and prioritizing new or closer data centers (lower h(n)).</li>
+              </ul>
+              <div class="image-container">
+                <img id="loadBalance" src="../assets/loadBalancing.png" alt="Load Balancing" />
+                <div class="image-caption">Google Cloud Load Balancing Architecture</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="refrence">
+      <h2>References</h2>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>[1] A* Search <br> 
+          <a href="https://www.codecademy.com/resources/docs/ai/search-algorithms/a-star-search">
+            https://www.codecademy.com/resources/docs/ai/search-algorithms/a-star-search
+          </a> 
+        </li>
+        <br>
+        <li>[2] A* search algorithm <br>
+          <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">
+            https://en.wikipedia.org/wiki/A*_search_algorithm
+          </a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
