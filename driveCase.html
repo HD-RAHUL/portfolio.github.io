@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Drive Use-Cases</title>
+
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styleSheets/case1.css" />
+    <link rel="stylesheet" href="../styleSheets/index.css" />
+    <link rel="stylesheet" href="../styleSheets/driveCase.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="../assets/cv.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1><img src="../assets/drive.png" alt="Drive Logo" />Google Drive</h1>
+      </div>
+    </header>
+
+    <div class="intro-container">
+      <h2>Introduction</h2>
+      <ul style="margin-left: 20px;">
+        <li>Google Drive is a cloud storage platform that lets users save files eliminating the need for physical storage devices.</li>
+        <li>Integrated with Google Docs, Sheets, and Slides, Drive allows concurrent access, improving productivity and teamwork.</li>
+        <li>With billions of users globally and storage capacity in exabytes, Google Drive is built on one of the world's most advanced and scalable cloud infrastructures.</li>
+      </ul>
+    </div>
+
+    <div class="workflow-container">
+      <div class="workflow-step">
+        <div class="step-header">1. File Deduplication in Google Drive</div>
+        <div class="substep">
+          <div class="explanation-grid">
+            <div class="why-box">
+              <span class="label"><h2>Data structre</h2></span>
+              <p>
+                <strong>Hashing</strong> is the process of converting data into a fixed-size
+                string of characters, typically for fast data retrieval or
+                comparison.A hash function takes input data and returns a unique
+                hash (digest) [1];
+              </p>
+              <img id="hash" src="../assets/hash-tables.gif" alt="Hashing GIF" />
+              <div id="imgCap"> How Hashing Prevents ID Collisions [2]</div>
+              <button class="code-button" onclick="window.location.href='code.html#hashing'"><strong>Code</strong></button>
+            </div>
+            <div class="how-box">
+              <span class="label"><h2>Application</h2></span>
+              <p>
+                Large files are optionally divided into smaller chunks ,Each
+                chunk (or full file) is hashed using cryptographic algorithms
+                like SHA-256 to create a unique digital fingerprint.Google
+                compares the new file's hash with existing hashes in its global
+                hash table; if a match exists, it recognizes the file as a
+                duplicate [3].
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="workflow-step">
+        <div class="step-header">
+          2. Interrupted File Transfers in Google Drive
+        </div>
+        <div class="substep">
+          <div class="explanation-grid">
+            <div class="why-box">
+              <span class="label"><h2>Algorithm</h2></span>
+              <p>
+                In the <strong>sliding window</strong> mechanism, the window slides over sequence
+                numbers assigned to file chunks. Instead of sending one chunk at
+                a time, multiple chunks are sent together, and the window size
+                dynamically adjusts based on network conditions [4].
+              </p>
+              <img id="sliding" src="../assets/slidingWin.gif" alt="slidingWin" />
+              <div id="imgCap2"> Efficient Data Stream Processing with Sliding Window [5]</div>
+              <button class="code-button" onclick="window.location.href='code.html#slidingWindow'"><strong>Code</strong></button>
+            </div>
+            <div class="how-box">
+              <span class="label"><h2>Application</h2></span>
+              <ul style="padding: 5px;">
+                <li>
+                  Large files are split into smaller fixed-size chunks, each
+                  with a sequence number.Multiple chunks are sent in a batch
+                  (window) without waiting for individual acknowledgments,
+                  improving efficiency.
+                </li>
+                <li>
+                  The server acknowledges received chunks; only lost chunks are
+                  retransmitted—not the entire file
+                </li>
+                <li>
+                  On interruption, the transfer resumes from the last
+                  acknowledged chunk, avoiding restart and saving bandwidth.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="refrence">
+      <h2>References</h2>
+      <ul style="list-style-type: none; margin-left: 15px;">
+        
+
+        <li>[1] Hashing in Data Structure <br> <a href="https://www.geeksforgeeks.org/hashing-data-structure/">https://www.geeksforgeeks.org/hashing-data-structure/</a> </li><br>
+
+         <li>[2] LeetCode Meditations — Chapter 1: Arrays & Hashing <br> <a href="https://rivea0.github.io/blog/leetcode-meditations-chapter-1-arrays-and-hashing">https://rivea0.github.io/blog/leetcode-meditations-chapter-1-arrays-and-hashing</a> </li><br>
+
+        <li>[3] Using SourceHash to deduplicate exported Drive files <br >
+          <a href=https://support.google.com/vault/answer/9777334?hl=en>https://support.google.com/vault/answer/9777334?hl=en<a></li><br>
+
+         <li>[4] Sliding Window Algorithm Explained <br >
+          <a href=https://builtin.com/data-science/sliding-window-algorithm>https://builtin.com/data-science/sliding-window-algorithm<a></li><br>
+
+        <li>[5] Leetcode: Dynamic sliding window pattern <br> <a href="https://medium.com/@cmphan7/leetcode-dynamic-sliding-window-pattern-f0b5130d4779">https://medium.com/@cmphan7/leetcode-dynamic-sliding-window-pattern-f0b5130d4779</a> </li><br>
+      </ul>
+
+    </section>
+  </body>
+</html>

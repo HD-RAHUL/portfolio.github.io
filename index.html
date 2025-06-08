@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Rahul's Portfolio</title>
+    <link rel="stylesheet" href="../styleSheets/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="../assets/cv.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Rahul Hebbare</span>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <a href="#about">About</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <a href="#skills">Skills</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a href="#projects">Projects</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <a href="#business-cases">Business Cases</a>
+          </div>
+          <div class="contact-btn"><a href="#contact">Contact Me</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#business-cases">Business Cases</a>
+          <a href="#contact">Contact Us</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <section id="">
+      <div class="main-container">
+        <div class="image">
+          <img src="../assets/farmer.webp" alt="unable to load image" />
+        </div>
+        <div class="content">
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            Hey I'm <span>Rahul</span>
+          </h1>
+          <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+            I'm a passionate and versatile developer with a strong interest in competitive programming, web development, Android development, and deep learning.I'm actively seeking a great opportunity to apply my skills, grow as a developer, and contribute to impactful projects
+          </p>
+
+          <div
+            class="social-links"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <!-- Social icons -->
+
+            <a
+              href="https://www.linkedin.com/in/rahul-hebbare-52647926a"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/HD-RAHUL" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://leetcode.com/u/Rahul_Hebbare/" target="_blank"
+              ><i class="fa-solid fa-code"></i>
+            </a>
+            <a href="https://codeforces.com/profile/Rahul_DH" target="_blank"
+              ><i class="fa-solid fa-terminal"></i
+            ></a>
+          </div>
+
+          <div
+            class="btn"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <!-- Button -->
+
+            <a
+              href="../assets/Rahul Hebbare.pdf"
+              download="Rahul_Hebbare_Resume.pdf"
+            >
+              <button>Download Resume</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔽 ABOUT SECTION START -->
+    <section id="about">
+      <div class="about-container">
+        <div
+          class="about-content"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <h2>About Me</h2>
+          <div class="about-details">
+            <p><i class="fa-solid fa-user"></i> Name: Rahul Deepak Hebbare</p>
+            <p>
+              <i class="fa-solid fa-envelope"></i> Email: rahulhebbare@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Location: Gadag,
+              Karnataka, India
+            </p>
+            <p><i class="fa-solid fa-graduation-cap"></i> Education:</p>
+            <div class="education-details">
+              <p>KLE Technological University, Hubli</p>
+              <p>Graduation Year: 2026</p>
+              <p>CGPA: 8.8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 🔼 ABOUT SECTION END -->
+
+    <!-- 🔽 Skill SECTION START -->
+    <section id="skills">
+      <div class="skills-container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <p>HTML & CSS</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-node"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <p>Git & GitHub</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <p>MySQL</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-docker"></i>
+            <p>Docker</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-video"></i>
+            <p>WebRTC</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <p>DSA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔼 Skills SECTION END -->
+
+    <!--Projects start-->
+    <section id="projects">
+      <div class="projects-container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <h3>YouTube AdBlock Chrome Extension</h3>
+            <p>
+              A Chrome extension that automatically blocks YouTube ads toenhance
+              the overall viewing experience.
+            </p>
+            <p>
+              <strong>Technologies:</strong> HTML, CSS, JavaScript, DOM
+              manipulation, ChromeExtension APIs
+            </p>
+            <a
+              href="https://github.com/HD-RAHUL/YouTube_Ad-Block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <h3>Image Colorization using GANs</h3>
+            <p>
+              A deep learning project that leverages Generative Adversarial
+              Networks (GANs) to colorize grayscale images using the ImageNet
+              dataset.
+            </p>
+            <p><strong>Technologies:</strong> PyTorch, GAN, ImageNet,</p>
+            <a
+              href="https://github.com/HD-RAHUL/Image-colorization/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+              Personal responsive website to showcase my projects and skills.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a
+              href="https://github.com/HD-RAHUL/portfolio.github.io"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Projects end-->
+
+    <!--BS start-->
+    <section id="business-cases">
+      <div class="business-container">
+        <h2>Google Business Cases</img></h2>
+        <div class="carousel-wrapper">
+          <div class="carousel" id="business-carousel">
+
+            <div class="carousel-item" id="case1">
+              <div class="item-header">
+                <h3>YouTube</h3>
+                <span class="item-tag">Core Product</span>
+              </div>
+              <div class="item-content">
+                <ul style="margin-left:25px;font-size: 20px;">
+                  <li>Watch & Discover Endless Content</li>
+                  <li>Create & Share Your Videos</li>
+                  <li>Enjoy Anytime, Anywhere </li>
+                </ul>
+                <div class="item-stats">
+                  <span>Revenue: $40B+ (2023)</span>
+                  <span>Since: 2005</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item" id="case2">
+              <div class="item-header">
+                <h3>Google Drive</h3>
+                <span class="item-tag">Strategic Move</span>
+              </div>
+              <div class="item-content">
+                <ul style="margin-left: 25px;font-size: 20px;">
+                  <li>Store & Access Files Anywhere</li>
+                  <li>Share & Collaborate Easily </li>
+                  <li>Secure & Organized </li>
+                </ul>
+                <div class="item-stats">
+                  <span>Market Share: 57%</span>
+                  <span>Since: 2012</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item" id="case3">
+              <div class="item-header">
+                <h3>Google Cloud Platform</h3>
+                <span class="item-tag">Growth Area</span>
+              </div>
+              <div class="item-content">
+                <ul style="margin-left: 25px;font-size: 20px;">
+                  <li>Computation</li>
+                  <li>Storage & Databases</li>
+                  <li>Security & Identity</li>
+                  <li>Big Data & Analytics</li>
+                </ul>
+                
+                <div class="item-stats">
+                  <span>Revenue: $12.26B</span>
+                  <span>Since: 2011</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-buttons">
+            <button onclick="moveLeft()" id="lft-btn">‹</button>
+            <button onclick="moveRight()" id="rt-btn">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--BS end-->
+
+    <!--Contact me start-->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!--CM end-->
+
+    <section id="business-cases">
+      <div class="business-container">
+        <h2>Portfolio Details</h2>
+        <div class="business-grid">
+          <p><strong>Course Name : </strong>Algorithmic Problem Solving</p>
+          <br />
+          <p><strong>Course Code : </strong>24ECSE309</p>
+          <br />
+          <p><strong>Name : </strong>Rahul Deepak Hebbare</p>
+          <br />
+          <p><strong>SRN : </strong>01FE22BCS220</p>
+          <br />
+          <p><strong>Course Instructor : </strong>Prakash Hegade</p>
+          <br />
+          <p><strong>University: </strong>KLE Technological University</p>
+          <br />
+          <p><strong>Domain: </strong>Google</p>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script>
+      function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("xNgUrpQY8vvmaZS5h"); // Replace with your EmailJS public key
+      })();
+
+      const form = document.getElementById("contact-form");
+      const button = form.querySelector("button");
+      const originalText = button.textContent;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // At this point, all fields are valid because browser blocks invalid submissions
+
+        // Disable button and show sending state
+        button.disabled = true;
+        button.textContent = "Sending...";
+
+        emailjs
+          .sendForm("service_bxltp6t", "template_omtb0q1", this)
+          .then(() => {
+            form.reset();
+            button.textContent = "Message Sent ✅";
+
+            // Revert after 2 seconds
+            setTimeout(() => {
+              button.textContent = originalText;
+              button.disabled = false;
+            }, 2000);
+          })
+          .catch((error) => {
+            console.error("Email sending failed:", error);
+            button.textContent = "Failed to Send ❌";
+
+            setTimeout(() => {
+              button.textContent = originalText;
+              button.disabled = false;
+            }, 2000);
+          });
+      });
+    </script>
+
+    <script>
+      const carousel = document.getElementById("business-carousel");
+      const originalItems = Array.from(carousel.children);
+      const total = originalItems.length;
+      let currentIndex = 0;
+      let interval;
+
+      // Clone first and last
+      const firstClone = originalItems[0].cloneNode(true);
+      const lastClone = originalItems[total - 1].cloneNode(true);
+
+      firstClone.id = "first-clone";
+      lastClone.id = "last-clone";
+
+      carousel.appendChild(firstClone);
+      carousel.insertBefore(lastClone, originalItems[0]);
+
+      // Set initial position
+      carousel.style.transform = `translateX(-${100}%)`;
+
+      function updateCarousel() {
+        carousel.style.transition = "transform 0.5s ease-in-out";
+        carousel.style.transform = `translateX(-${(currentIndex + 1) * 100}%)`;
+      }
+
+      function moveRight() {
+        if (currentIndex >= total) currentIndex = 0;
+        currentIndex++;
+        updateCarousel();
+        resetAutoSlide();
+      }
+
+      function moveLeft() {
+        if (currentIndex <= 0) currentIndex = total;
+        currentIndex--;
+        updateCarousel();
+        resetAutoSlide();
+      }
+
+      carousel.addEventListener("transitionend", () => {
+        if (originalItems[currentIndex]?.id === "first-clone") {
+          carousel.style.transition = "none";
+          currentIndex = 0;
+          carousel.style.transform = `translateX(-${100}%)`;
+          // Force reflow
+          void carousel.offsetWidth;
+        }
+        if (originalItems[currentIndex]?.id === "last-clone") {
+          carousel.style.transition = "none";
+          currentIndex = total - 1;
+          carousel.style.transform = `translateX(-${total * 100}%)`;
+          // Force reflow
+          void carousel.offsetWidth;
+        }
+      });
+
+      function autoSlide() {
+        interval = setInterval(() => {
+          if (currentIndex >= total) {
+            currentIndex = 0;
+            carousel.style.transition = "none";
+            carousel.style.transform = `translateX(-${100}%)`;
+            // Force reflow
+            void carousel.offsetWidth;
+          }
+          moveRight();
+        }, 5000);
+      }
+
+      function resetAutoSlide() {
+        clearInterval(interval);
+        autoSlide();
+      }
+
+      autoSlide();
+
+      document.querySelector("#case1").addEventListener("click", () => {
+        window.location.href = "youtubeCase.html";
+      });
+
+      document.querySelector("#case2").addEventListener("click", () => {
+        window.location.href = "driveCase.html";
+      });
+
+      document.querySelector("#case3").addEventListener("click", () => {
+        window.location.href = "gcpCase.html";
+      });
+    </script>
+  </body>
+</html>
